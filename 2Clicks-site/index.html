@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guia Viva Santana de Parnaíba & Alphaville</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== 0. TOPO / NAVBAR ===================== -->
+  <header id="topo" class="header">
+    <div class="container header__content">
+      <div class="logo">
+        <!-- Você pode trocar por uma imagem <img src="logo.png" alt="Guia Viva SPa" /> -->
+        <a href="#hero">Guia Viva SPa</a>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <div class="nav__indicator"></div>
+          <li><a href="#hero" class="active">Início</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#turismo">Turismo</a></li>
+          <li><a href="#mapa">Mapa & Rotas</a></li>
+          <li><a href="#comercios">Comércios & Camelôs</a></li>
+          <li><a href="#guia-novos">Guia para Novos</a></li>
+          <li><a href="#contato-projeto">Contato / Sobre o Projeto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Menu hamburger para mobile (JS depois) -->
+      <button class="nav__toggle" aria-label="Abrir menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== 1. HERO DA CIDADE ===================== -->
+  <section id="hero" class="hero">
+    <div class="container hero__content">
+      <div class="hero__text">
+        <h1>Viver Santana de Parnaíba & Alphaville</h1>
+        <p>
+          Eventos, notícias, turismo, comércio local e dicas para quem mora, trabalha
+          ou está chegando agora.
+        </p>
+        <div class="hero__actions">
+          <a href="#eventos" class="btn btn-primary">Ver eventos de hoje</a>
+          <a href="#guia-novos" class="btn btn-secondary">Sou novo na cidade</a>
+          <a href="#comercios" class="btn btn-outline">Explorar comércio local</a>
+        </div>
+      </div>
+
+      <div class="hero__image">
+        <div class="hero__mini-carousel" id="hero-mini-carousel">
+          <div class="mini-carousel__slides">
+            <div class="mini-carousel__slide active" style="background-image: url('');"></div>
+            <div class="mini-carousel__slide" style="background-image: url('');"></div>
+            <div class="mini-carousel__slide" style="background-image: url('');"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 2. RESUMO RÁPIDO (CARDS) ===================== -->
+  <section id="resumo-cidade" class="resumo-cidade">
+    <div class="container resumo-cidade__grid">
+      <article class="resumo-card">
+        <h3>+X eventos neste mês</h3>
+        <p>Agenda sempre atualizada com o que acontece na cidade.</p>
+      </article>
+
+      <article class="resumo-card">
+        <h3>Principais pontos turísticos</h3>
+        <p>Descubra o centro histórico, parques e pontos icônicos.</p>
+      </article>
+
+      <article class="resumo-card">
+        <h3>Comércio local em destaque</h3>
+        <p>Lojas, serviços e comércio de rua em um só lugar.</p>
+      </article>
+
+      <article class="resumo-card">
+        <h3>Notícias oficiais</h3>
+        <p>Informações da Prefeitura e portais locais.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== 3. AGENDA DE EVENTOS ===================== -->
+  <section id="eventos" class="eventos section">
+    <div class="container">
+      <header class="section__header">
+        <h2>Agenda de Eventos</h2>
+        <p>Shows, feiras, esportes, eventos culturais e ações públicas em Santana de Parnaíba & Alphaville.</p>
+      </header>
+
+      <!-- FILTROS (front) -->
+      <div class="eventos__filtros">
+        <div class="filtro">
+          <label for="filtro-mes">Mês</label>
+          <select id="filtro-mes" name="mes">
+            <option value="">Todos</option>
+            <option value="01">Janeiro</option>
+            <option value="02">Fevereiro</option>
+            <option value="03">Março</option>
+            <option value="04">Abril</option>
+            <option value="05">Maio</option>
+            <option value="06">Junho</option>
+            <option value="07">Julho</option>
+            <option value="08">Agosto</option>
+            <option value="09">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+          </select>
+        </div>
+
+        <div class="filtro">
+          <label for="filtro-local">Cidade / Bairro</label>
+          <select id="filtro-local" name="local">
+            <option value="">Todos</option>
+            <option value="santana">Santana de Parnaíba</option>
+            <option value="alphaville">Alphaville</option>
+            <option value="regiao-oeste">Região Oeste</option>
+          </select>
+        </div>
+
+        <div class="filtro">
+          <label for="filtro-tipo">Tipo de evento</label>
+          <select id="filtro-tipo" name="tipo">
+            <option value="">Todos</option>
+            <option value="show">Show</option>
+            <option value="feira">Feira</option>
+            <option value="infantil">Infantil</option>
+            <option value="esporte">Esporte</option>
+            <option value="palestra">Palestra</option>
+          </select>
+        </div>
+
+        <div class="filtro filtro--busca">
+          <label for="busca-eventos">Buscar</label>
+          <input type="text" id="busca-eventos" placeholder="Digite o nome do evento..." />
+        </div>
+      </div>
+
+      <!-- EVENTOS EM DESTAQUE -->
+      <div class="eventos__destaque">
+        <h3>Eventos em destaque</h3>
+        <div class="eventos__destaque-grid" id="eventos-destaque">
+          <!-- Carrossel é inserido aqui via JS -->
+        </div>
+      </div>
+
+   <!-- LISTA GERAL DE EVENTOS -->
+        <div class="eventos__lista">
+          <h3>Todos os eventos</h3>
+          <div id="lista-eventos" class="eventos__grid">
+            <!-- Cards inseridos via JS -->
+          </div>
+
+        <div class="eventos__ver-mais">
+          <button class="btn btn-secondary">Ver todos os eventos</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===================== 4. NOTÍCIAS ===================== -->
+  <section id="noticias" class="noticias section">
+    <div class="container">
+      <header class="section__header">
+        <h2>Notícias da Cidade</h2>
+        <p>Acompanhe o que está acontecendo em Santana de Parnaíba, Alphaville e região.</p>
+      </header>
+
+      <div class="noticias__layout">
+        <!-- Notícia principal (prefeitura em destaque) -->
+        <article class="noticia noticia--principal">
+          <div class="noticia__imagem">
+            Imagem da notícia principal
+          </div>
+          <div class="noticia__conteudo">
+            <span class="noticia__selo">Prefeitura de Santana de Parnaíba</span>
+            <h3>Título da notícia principal</h3>
+            <p class="noticia__resumo">
+              Resumo breve da notícia principal. Este texto será substituído por conteúdo dinâmico.
+            </p>
+            <a href="#" class="btn btn-sm">Ler matéria completa</a>
+          </div>
+        </article>
+
+        <!-- Lista lateral de notícias menores -->
+        <aside class="noticias__lista">
+          <article class="noticia noticia--menor">
+            <h4>Título da notícia menor</h4>
+            <p class="noticia__fonte-data">Fonte: Portal local • 12/04/2025</p>
+          </article>
+
+          <article class="noticia noticia--menor">
+            <h4>Outra notícia menor</h4>
+            <p class="noticia__fonte-data">Fonte: Prefeitura • 10/04/2025</p>
+          </article>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5. TURISMO & PONTOS HISTÓRICOS ===================== -->
+  <section id="turismo" class="turismo section">
+    <div class="container">
+      <header class="section__header">
+        <h2>Turismo & Pontos Históricos</h2>
+        <p>História, cultura e natureza em um só lugar.</p>
+      </header>
+
+      <div class="turismo__carrossel">
+        <article class="turismo-card">
+          <div class="turismo-card__imagem">
+            Imagem do ponto turístico
+          </div>
+          <div class="turismo-card__conteudo">
+            <h3>Nome do Ponto Turístico</h3>
+            <p>Descrição curta sobre o local, sua história e o que visitar.</p>
+            <p class="turismo-card__tags">Tags: Histórico • Família</p>
+            <a href="#mapa" class="btn btn-sm btn-outline">Ver no mapa</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="turismo__tradicionais">
+        <h3>Eventos tradicionais</h3>
+        <p>Exemplo: Drama da Paixão de Cristo, festas típicas, etc.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 6. MAPA & ROTAS ===================== -->
+  <section id="mapa" class="mapa section">
+    <div class="container">
+      <header class="section__header">
+        <h2>Mapa da Cidade</h2>
+        <p>Encontre eventos, pontos turísticos, serviços e comércio de rua.</p>
+      </header>
+
+      <div class="mapa__layout">
+        <div class="mapa__filtros">
+          <h3>Filtrar no mapa</h3>
+          <label><input type="checkbox" id="chk-eventos" checked /> Eventos</label><br />
+          <label><input type="checkbox" id="chk-turismo" checked /> Pontos turísticos</label><br />
+          <label><input type="checkbox" id="chk-servicos" /> Serviços essenciais</label><br />
+          <label><input type="checkbox" id="chk-lojas" /> Lojas & restaurantes</label><br />
+          <label><input type="checkbox" id="chk-camelos" /> Comércio de rua (camelôs)</label>
+        </div>
+
+        <div class="mapa__view">
+          <div class="mapa__placeholder">
+            Mapa interativo aqui
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 7. COMÉRCIOS & CAMELÔS ===================== -->
+  <section id="comercios" class="comercios section">
+    <div class="container">
+      <header class="section__header">
+        <h2>Comércios & Camelôs</h2>
+        <p>Lojas, serviços e comércio de rua – todo mundo na mesma vitrine.</p>
+      </header>
+
+      <!-- 7.1 Lojas & Serviços (formais) -->
+      <div class="comercios__subsecao">
+        <h3>Lojas & Serviços</h3>
+        <div class="comercios__grid">
+          <article class="comercio-card">
+            <h4>Nome da Loja / Serviço</h4>
+            <p class="comercio-card__categoria">Categoria: Restaurante</p>
+            <p class="comercio-card__endereco">Endereço: Rua Exemplo, 123 - Alphaville</p>
+            <p class="comercio-card__horario">Horário: 11h às 22h</p>
+            <a href="#" class="btn btn-sm btn-outline">Ver rota</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- 7.2 Comércio de Rua & Pequenos Negócios (camelôs) -->
+      <div class="comercios__subsecao">
+        <h3>Comércio de Rua & Pequenos Negócios</h3>
+        <p class="comercios__intro">
+          Barracas de comida, carrinhos de lanche, pequenos bazares… quem faz a cidade acontecer nas ruas.
+        </p>
+
+        <div class="comercios__filtros">
+          <div class="filtro">
+            <label for="filtro-cidade-camelos">Cidade</label>
+            <select id="filtro-cidade-camelos">
+              <option value="">Todas</option>
+              <option value="santana">Santana de Parnaíba</option>
+              <option value="alphaville">Alphaville</option>
+            </select>
+          </div>
+          <div class="filtro">
+            <label for="filtro-categoria-camelos">Categoria</label>
+            <select id="filtro-categoria-camelos">
+              <option value="">Todas</option>
+              <option value="comida">Comida de rua</option>
+              <option value="doces">Doces</option>
+              <option value="bazar">Bazar</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="comercios__grid" id="lista-camelos">
+          <article class="comercio-card comercio-card--camelo">
+            <h4>Apelido do Camelô</h4>
+            <p class="comercio-card__categoria">Categoria: Comida de rua</p>
+            <p class="comercio-card__cidade">Cidade/Bairro: Santana - Centro</p>
+            <p class="comercio-card__horario">Horário: 18h às 23h</p>
+            <p class="comercio-card__referencia">Ponto de referência: Em frente ao terminal</p>
+            <p class="comercio-card__contato">WhatsApp: (11) 99999-0000</p>
+            <a href="#" class="btn btn-sm btn-outline">Ver rota</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 8. GUIA PARA NOVOS MORADORES ===================== -->
+  <section id="guia-novos" class="guia-novos section">
+    <div class="container">
+      <header class="section__header">
+        <h2>Sou Novo na Cidade</h2>
+        <p>Passo a passo para se localizar e se sentir em casa.</p>
+      </header>
+
+      <div class="guia-novos__grid">
+        <article class="guia-card">
+          <h3>Como se locomover</h3>
+          <p>Principais linhas de ônibus, dicas de apps de transporte e regiões com mais movimento.</p>
+        </article>
+
+        <article class="guia-card">
+          <h3>Serviços essenciais</h3>
+          <p>Postos de saúde, hospitais, delegacia, GCM e endereços úteis.</p>
+        </article>
+
+        <article class="guia-card">
+          <h3>Educação</h3>
+          <p>Principais escolas, faculdades e onde se informar sobre matrículas.</p>
+        </article>
+
+        <article class="guia-card">
+          <h3>Coleta de lixo & reciclagem</h3>
+          <p>Dias de coleta, pontos de reciclagem e orientações básicas.</p>
+        </article>
+
+        <article class="guia-card">
+          <h3>Dicas da comunidade</h3>
+          <p>Melhores horários para certos lugares, áreas com trânsito intenso, etc.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 9. PARTICIPE / ENVIE SEU ESTABELECIMENTO / EVENTO ===================== -->
+  <section id="participe" class="participe section">
+    <div class="container">
+      <header class="section__header">
+        <h2>Quer aparecer aqui?</h2>
+        <p>Se você organiza eventos, tem um negócio local ou vende na rua, pode enviar seus dados para entrar neste guia.</p>
+      </header>
+
+      <form class="participe__form">
+        <div class="form__group">
+          <label for="tipo-cadastro">Tipo de cadastro</label>
+          <select id="tipo-cadastro" name="tipo-cadastro" required>
+            <option value="">Selecione</option>
+            <option value="evento">Evento</option>
+            <option value="loja">Loja / Serviço</option>
+            <option value="camelo">Camelô / Comércio de rua</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label for="nome">Nome / Nome do estabelecimento / evento</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+
+        <div class="form__group">
+          <label for="cidade-bairro">Cidade / Bairro</label>
+          <input type="text" id="cidade-bairro" name="cidade-bairro" required />
+        </div>
+
+        <div class="form__group">
+          <label for="descricao">O que oferece</label>
+          <textarea id="descricao" name="descricao" rows="3" required></textarea>
+        </div>
+
+        <div class="form__group">
+          <label for="contato">Contato (WhatsApp, e-mail, etc.)</label>
+          <input type="text" id="contato" name="contato" required />
+        </div>
+
+        <div class="form__group">
+          <label for="instagram">Instagram / Site (opcional)</label>
+          <input type="text" id="instagram" name="instagram" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== 10. SOBRE O PROJETO & CRÉDITOS ===================== -->
+  <section id="contato-projeto" class="sobre section">
+    <div class="container">
+      <header class="section__header">
+        <h2>Sobre o Projeto</h2>
+      </header>
+
+      <div class="sobre__conteudo">
+        <p>
+          Este é um protótipo de guia da cidade, criado para centralizar eventos, notícias,
+          turismo e comércio local de Santana de Parnaíba & Alphaville em um só lugar.
+        </p>
+        <p>
+          Inspirado na visão da 2Click de conectar pessoas, negócios formais e informais
+          (como camelôs e pequenos empreendedores), dando visibilidade para todos.
+        </p>
+
+        <p class="sobre__assinatura">
+          Feito pensando em Santana de Parnaíba & Alphaville.
+        </p>
+
+        <a href="#participe" class="btn btn-secondary">Fale com a equipe / Participe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 11. RODAPÉ ===================== -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__info">
+        <p>&copy; 2025 Guia Viva Santana de Parnaíba & Alphaville.</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#hero">Início</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#comercios">Comércio</a>
+        <a href="#mapa">Mapa</a>
+      </div>
+
+      <div class="footer__social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS principal -->
+  <script src="script.js"></script>
+</body>
+</html>

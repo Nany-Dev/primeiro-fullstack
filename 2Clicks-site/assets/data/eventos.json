@@ -1,0 +1,149 @@
+[
+  {
+  "id": 1,
+  "title": "Aniversário da cidade",
+  "description": "No dia 14 de novembro Santana de Parnaíba comemora o seu aniversário. A festa inclui alvorada, missas e diversas atividades culturais tendo como auge mega show (musical e pirotécnico).",
+  "startDate": "2026-11-14T00:00:00",
+  "endDate": "2026-11-14T23:59:59",
+  "location": {
+    "name": "Estrada dos Romeiros - Centro",
+    "address": "Estrada dos Romeiros, Centro",
+    "city": "Santana de Parnaíba",
+    "state": "SP",
+    "zipCode": "06501-001",
+    "lat": -23.4430047,
+    "lng": -46.9226637
+  },
+  "tags": ["musical", "cultural", "pirotécnico"],
+  "source": "prefeitura",
+  "organizer": "Secretaria Municipal de Cultura e Turismo",
+  "imageUrl": "https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/Content/image/SMCT/AniversarioCidade.jpg",
+  "url": "https://www.santanadeparnaiba.sp.gov.br"
+  },
+  {
+  "id": 2,
+  "title": "Drama da Paixão",
+  "description": "Na Semana Santa (Quinta-feira Santa, Sexta-feira Santa e Sábado de Aleluia), Santana de Parnaíba realiza a 2ª maior encenação da vida de Cristo no Brasil. O espetáculo revive o nascimento, vida, morte e ressurreição de Jesus Cristo em um espaço cenográfico de 15 mil m², envolvendo mais de 1.000 pessoas entre atores e produção.",
+  "startDate": "2026-04-02T19:00:00",
+  "endDate": "2026-04-04T23:00:00",
+  "location": {
+    "name": "Barragem Edgard de Souza",
+    "address": "Estrada dos Romeiros, km 40",
+    "city": "Santana de Parnaíba",
+    "state": "SP",
+    "zipCode": "06501-001",
+    "lat": -23.4689,
+    "lng": -46.9544
+  },
+  "tags": ["religioso", "cultural", "teatro"],
+  "source": "prefeitura",
+  "organizer": "Secretaria Municipal de Cultura e Turismo",
+  "imageUrl": "https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/Content/image/SMCT/DramaDaPaixao.jpg",
+  "url": "https://www.santanadeparnaiba.sp.gov.br"
+},
+  {
+  "id": 3,
+  "title": "Corpus Christi",
+  "description": "Uma das maiores manifestações religiosas do Estado de São Paulo, que atrai milhares de visitantes a Santana de Parnaíba. Diversas ruas do Centro Histórico são ornamentadas com tapetes coloridos feitos de serragem, pó de café e casca de ovos, com ilustrações de motivos religiosos. Ao longo do dia são realizadas missas e procissão, além de praça de alimentação e barracas de artes e artesanato. Visitantes que desejam participar da confecção dos tapetes devem realizar agendamento prévio.",
+  "startDate": "2026-06-04T07:00:00",
+  "endDate": "2026-06-04T22:00:00",
+  "location": {
+    "name": "Centro Histórico de Santana de Parnaíba",
+    "address": "Ruas do Centro Histórico",
+    "city": "Santana de Parnaíba",
+    "state": "SP",
+    "zipCode": "06501-001",
+    "lat": -23.4433,
+    "lng": -46.9178
+  },
+  "tags": ["religioso", "cultural", "procissão", "artesanato"],
+  "source": "prefeitura",
+  "organizer": "Secretaria Municipal de Cultura e Turismo",
+  "imageUrl": "https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/Content/image/SMCT/CorpusChristi.jpg",
+  "url": "https://www.santanadeparnaiba.sp.gov.br"
+},
+  {
+  "id": 4,
+  "title": "Antigomobilismo",
+  "description": "Anualmente, no último domingo do mês de junho, as vagas de estacionamento do Centro Histórico são ocupadas por veículos antigos. Automóveis clássicos que marcaram gerações ficam em exposição nas ruas Bartolomeu Bueno, André Fernandes e Suzana Dias, atraindo admiradores de todas as idades. O evento conta com atividades artísticas, culturais e turísticas, além de oferta gastronômica com restaurantes, lanchonetes, quitanda e praça de alimentação. É possível ver raridades que abrangem as décadas de 1950, 1960, 1970 e 1980, incluindo caminhões e jeeps do exército.",
+  "startDate": "2026-06-28T09:00:00",
+  "endDate": "2026-06-28T18:00:00",
+  "location": {
+    "name": "Centro Histórico de Santana de Parnaíba",
+    "address": "Ruas Bartolomeu Bueno, André Fernandes e Suzana Dias - Centro Histórico",
+    "city": "Santana de Parnaíba",
+    "state": "SP",
+    "zipCode": "06501-001",
+    "lat": -23.4433,
+    "lng": -46.9178
+  },
+  "tags": ["cultural", "automobilismo", "turístico"],
+  "source": "prefeitura",
+  "organizer": "Secretaria Municipal de Cultura e Turismo",
+  "imageUrl": "https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/Content/image/SMCT/AntigoMobilismo.jpg",
+  "url": "https://www.santanadeparnaiba.sp.gov.br"
+},
+{
+  "id": 5,
+  "title": "Música na Praça",
+  "description": "Aos fins de semana e feriados acontece o Música na Praça, das 15h às 17h, com apresentações musicais de diversos gêneros (MPB, samba, choro, blues e rock), tendo o Coreto Maestro Bilo como palco das apresentações.",
+  "startDate": "2026-03-07T15:00:00",
+  "endDate": "2026-03-07T17:00:00",
+  "location": {
+    "name": "Coreto Maestro Bilo",
+    "address": "Praça 14 de Novembro - Centro Histórico",
+    "city": "Santana de Parnaíba",
+    "state": "SP",
+    "zipCode": "06501-001",
+    "lat": -23.4432,
+    "lng": -46.9179
+  },
+  "tags": ["musical", "cultural", "fim-de-semana"],
+  "source": "prefeitura",
+  "organizer": "Secretaria Municipal de Cultura e Turismo",
+  "imageUrl": "https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/Content/image/SMCT/MusicaNaPraca.jpg",
+  "url": "https://www.santanadeparnaiba.sp.gov.br"
+},
+{
+  "id": 6,
+  "title": "Carnaval",
+  "description": "Em Santana de Parnaíba, o carnaval é uma festa de rua no Centro Histórico. O Grito da Noite, manifestação secular, marca a abertura oficial do Carnaval Parnaibano. Na sexta-feira, a cidade, às escuras, espera pelo batuque dos tambores ao som do samba de bumbo, tradição de origem afro-brasileira. Os cabeções, que acompanham o cortejo, são uma das mais legítimas representações da arte popular na cidade. Nos demais dias, a festa é completada por desfiles de animados grupos de samba que seguem no embalo da tradição carnavalesca.",
+  "startDate": "2026-02-13T20:00:00",
+  "endDate": "2026-02-17T23:59:00",
+  "location": {
+    "name": "Centro Histórico de Santana de Parnaíba",
+    "address": "Centro Histórico",
+    "city": "Santana de Parnaíba",
+    "state": "SP",
+    "zipCode": "06501-001",
+    "lat": -23.4433,
+    "lng": -46.9178
+  },
+  "tags": ["carnaval", "cultural", "popular"],
+  "source": "prefeitura",
+  "organizer": "Secretaria Municipal de Cultura e Turismo",
+  "imageUrl": "https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/Content/image/SMCT/Carnaval.jpg",
+  "url": "https://www.santanadeparnaiba.sp.gov.br"
+},
+{
+  "id": 7,
+  "title": "Romaria de Santo Antônio do Suru",
+  "description": "Em Santana de Parnaíba, o dia de Santo Antônio, o santo casamenteiro, é comemorado com festa. A Romaria de Santo Antônio do Suru acontece no mês de junho: os devotos se reúnem em frente à Igreja Matriz de Santa Ana, no Centro Histórico, e após a bênção do padre partem em cavalgada para a Capela de Santo Antônio do Suru. O evento conta com missa, quermesse e atrações musicais.",
+  "startDate": "2026-06-13T08:00:00",
+  "endDate": "2026-06-13T18:00:00",
+  "location": {
+    "name": "Capela de Santo Antônio do Suru",
+    "address": "Bairro do Suru",
+    "city": "Santana de Parnaíba",
+    "state": "SP",
+    "zipCode": "06501-001",
+    "lat": -23.4295,
+    "lng": -46.9002
+  },
+  "tags": ["religioso", "cultural", "romaria"],
+  "source": "prefeitura",
+  "organizer": "Secretaria Municipal de Cultura e Turismo",
+  "imageUrl":"https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma/Content/image/SMCT/RomariaSuru/PmSPRomariaSuru2022.jpg",
+  "url": "https://www.santanadeparnaiba.sp.gov.br"
+}
+]
